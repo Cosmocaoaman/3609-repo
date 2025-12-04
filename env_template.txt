@@ -1,0 +1,27 @@
+# ============================================
+# Security Configuration (Assignment 3)
+# ============================================
+# Copy this file to .env and fill in actual values
+# Note: .env file should NOT be committed to version control
+
+# Requirement 4: DEBUG mode
+# Development: True (allows HTTP, no SSL required)
+# Production: False (requires HTTPS, enables all security features)
+DEBUG=True
+
+# SECRET_KEY (must generate new secure key for production, minimum 50 characters)
+SECRET_KEY=django-insecure-du72xoqdq=a+8=op+c(r7@g(w@!bml5p$ak7z5gy#q#9iqm@&1
+
+# Requirement 9: ALLOWED_HOSTS (must configure actual domain in production)
+ALLOWED_HOSTS=localhost,127.0.0.1,testserver
+
+# Requirement 8: CSRF_TRUSTED_ORIGINS (must configure HTTPS domain in production)
+CSRF_TRUSTED_ORIGINS=http://localhost:5173,http://127.0.0.1:5173
+
+# Email service (required for functionality)
+MAILJET_API_KEY=db40939f541398c8e0bb534e03125d4e
+MAILJET_API_SECRET=511ab4472e7151069e3117b4b55ef4d1
+MAILJET_FROM_EMAIL=zche0316@gmail.com
+MAILJET_FROM_NAME=Jacaranda Talk
+EMAIL_ENCRYPTION_KEY=Vi3PbpCyh9fSLSUgLiggjrVWtwvl8aaUIHkuyhDUK1M=
+EMAIL_RATE_LIMIT_SECONDS=10
